@@ -81,3 +81,7 @@ pnpm typecheck
 | `src/actions.ts` | Action schemas the settings panel calls |
 | `web/TokscalePanel.tsx` | Draft settings panel for `apps/web` |
 | `docs/HOST_API.md` | The `usage:read` API p0code needs to add |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
