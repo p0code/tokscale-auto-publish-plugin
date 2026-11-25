@@ -1,0 +1,25 @@
+{
+  // Mirrors p0code's tsconfig.base.json; stubs stand in for the workspace packages.
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "paths": {
+      "@t3tools/plugin-api": ["./stubs/plugin-api.ts"],
+      "@t3tools/contracts": ["./stubs/contracts.ts"],
+      "vite-plus/test": ["./node_modules/vitest/dist/index.d.ts"],
+      "effect/*": ["./node_modules/effect/dist/*.d.ts"]
+    }
+  },
+  "include": ["../src", "stubs"]
+}

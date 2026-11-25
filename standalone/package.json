@@ -1,0 +1,15 @@
+{
+  "name": "tokscale-auto-publish-standalone",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "effect": "4.1.5",
+    "typescript": "7.0.2",
+    "vitest": "5.1.2"
+  }
+}
