@@ -20,3 +20,5 @@ export const tokscaleAutoPublish = definePlugin({
   actions: tokscaleActions,
   start: makePublisher().pipe(Effect.map(({ actions }) => ({ actions }))),
 });
+
+export default tokscaleAutoPublish;

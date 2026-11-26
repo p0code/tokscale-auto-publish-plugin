@@ -1,6 +1,6 @@
 {
   "name": "@t3tools/plugin-tokscale-auto-publish",
-  "private": true,
+  "private": false,
   "type": "module",
   "exports": {
     ".": {
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "typecheck": "effect-tsgo tsrs --noEmit",
-    "test": "vp test run --config ../../vite.config.ts --dir ."
+    "test": "vp test run --config ../../vite.config.ts --dir .",
+    "bundle": "node scripts/build-bundle.mjs"
   },
   "dependencies": {
     "@t3tools/contracts": "workspace:*",
@@ -27,5 +28,6 @@
     "@types/node": "catalog:",
     "vite-plus": "catalog:"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "version": "0.1.0"
 }

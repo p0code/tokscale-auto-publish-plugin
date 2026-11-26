@@ -1,0 +1,15 @@
+{
+  "id": "tokscale-auto-publish",
+  "name": "Tokscale auto-publish",
+  "description": "Publishes your daily token and cost totals per model to the Tokscale leaderboard. Prompts, code, thread titles, project names and file paths are never sent.",
+  "version": "0.1.0",
+  "unofficial": true,
+  "externalServices": [
+    "tokscale.ai"
+  ],
+  "capabilities": [
+    "network:outbound",
+    "usage:read"
+  ],
+  "httpRoutes": []
+}
