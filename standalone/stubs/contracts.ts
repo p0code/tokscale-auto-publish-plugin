@@ -26,5 +26,6 @@ export const PluginManifest = Schema.Struct({
   externalServices: Schema.Array(Schema.String),
   capabilities: Schema.Array(PluginCapability),
   httpRoutes: Schema.Array(Schema.String),
+  apiVersion: Schema.optionalKey(Schema.Int),
 });
 export type PluginManifest = typeof PluginManifest.Type;

@@ -11,7 +11,8 @@ export const tokscaleAutoPublish = definePlugin({
     name: "Tokscale auto-publish",
     description:
       "Publishes your daily token and cost totals per model to the Tokscale leaderboard. Prompts, code, thread titles, project names and file paths are never sent.",
-    version: "0.1.0",
+    version: "0.1.1",
+    apiVersion: 1,
     unofficial: true,
     externalServices: [TOKSCALE_HOST],
     capabilities: ["network:outbound", "usage:read"],

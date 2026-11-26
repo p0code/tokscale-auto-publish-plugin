@@ -59,7 +59,7 @@ describe("buildSubmission", () => {
     });
     expect(submission.meta).toEqual({
       generatedAt,
-      version: "p0code-plugin/0.1.0",
+      version: "p0code-plugin/0.1.1",
       dateRange: { start: "2025-12-31", end: "2026-01-01" },
     });
     expect(submission.meta.version.length).toBeLessThanOrEqual(20);

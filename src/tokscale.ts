@@ -9,7 +9,7 @@ export const TOKSCALE_API_URL = "https://tokscale.ai";
 export const TOKSCALE_HOST = "tokscale.ai";
 export const DEVICE_NAME = "p0code";
 /** Sent as `meta.version`; Tokscale caps it at 20 characters. */
-export const CLIENT_VERSION = "p0code-plugin/0.1.0";
+export const CLIENT_VERSION = "p0code-plugin/0.1.1";
 
 /**
  * p0code usage providers to Tokscale client ids. Tokscale only accepts its own list, so a

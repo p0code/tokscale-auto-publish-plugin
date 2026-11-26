@@ -181,6 +181,10 @@ try {
       `Manifest version (${manifest.version}) disagrees with package.json (${pkg.version}).`,
     );
   }
+  // Installed bundles must name the plugin API they target; 1 is PLUGIN_API_VERSION in p0code.
+  if (manifest.apiVersion !== 1) {
+    throw new Error(`Bundled manifest apiVersion must be 1, got ${String(manifest.apiVersion)}.`);
+  }
   const roundTripped = JSON.parse(JSON.stringify(manifest));
   if (!util.isDeepStrictEqual(roundTripped, manifest)) {
     throw new Error("Manifest is not clean JSON round-trip equal.");
